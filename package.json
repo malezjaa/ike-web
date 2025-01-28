@@ -1,0 +1,23 @@
+{
+  "name": "@website/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "format": "biome format --write",
+    "dev": "nx run-many -t dev --projects='apps/**'"
+  },
+  "private": true,
+  "dependencies": {
+    "typescript": "5.5.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@nx/js": "19.5.7",
+    "@nx/workspace": "19.5.7",
+    "nx": "19.5.7"
+  },
+  "workspaces": [
+    "apps/**"
+  ],
+  "packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4"
+}
